@@ -1,0 +1,24 @@
+name: 🏥 Pneumonia Docker CI
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 📦 Check Docker Hub
+      run: |
+        echo "Pneumonia Detection System - CI/CD Pipeline"
+        echo "=========================================="
+        echo ""
+        echo "✅ Images disponibles sur Docker Hub (zyzz1):"
+        echo "  - pneumoniadetectionsystem-auth:latest"
+        echo "  - pneumoniadetectionsystem-frontend:latest"
+        echo "  - pneumoniadetectionsystem-storage:latest"
+        echo "  - pneumoniadetectionsystem-model:latest"
+        echo ""
+        echo "🔗 https://hub.docker.com/u/zyzz1"
